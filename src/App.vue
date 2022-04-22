@@ -1,11 +1,17 @@
 <template>
   <div id="app">
-{{ user.id }}
+    <h1>{{ user.id }}</h1>
+    <br />
+    <div>
+      <p>{{ user.firstName }} {{ user.lastName }}</p>
+      {{ fullName }} <br />
+
+      {{ user }}
+    </div>
   </div>
 </template>
 
 <script>
-
 export default {
   name: "App",
   data() {
@@ -17,9 +23,14 @@ export default {
         firstName: "mkakari",
         lastName: "chale",
         email: "andersondeveloper@gmail.com",
-        isAdmin: true
-      }
+        isAdmin: true,
+      },
     };
+  },
+  computed: {
+    fullName() {
+      return `${this.user.firstName} ${this.user.lastName}`;
+    },
   },
 };
 </script>
