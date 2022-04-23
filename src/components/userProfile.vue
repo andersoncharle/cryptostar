@@ -30,7 +30,7 @@ export default {
         isAdmin: false,
         tweetsLoop:[
           {id:1,content:'blackmitnick is amazing buddy!!'},
-          {id:1,content:'code with blackmitnick for advanced concepts'},
+          {id:2,content:'code with blackmitnick for advanced concepts'},
         ]
       },
     };
