@@ -8,13 +8,13 @@
         <strong>Followers:</strong>
         <span> {{ followers }}</span>
       </div>
-      <div
-        class="user-profile__tweets-wrapper"
-        v-for="items in user.tweetsLoop"
-        :key="items.id"
-      >
-        {{ items.content }}
-      </div>
+    </div>
+    <div
+      class="user-profile__tweets-wrapper"
+      v-for="items in user.tweetsLoop"
+      :key="items.id"
+    >
+      {{ items.content }}
     </div>
   </div>
 </template>
