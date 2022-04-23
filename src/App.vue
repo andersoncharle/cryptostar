@@ -33,10 +33,12 @@ export default {
       return `${this.user.firstName} ${this.user.lastName}`;
     },
   },
-  watch:{
-    followers(newFollowerCount,oldFollowerCount){
-      console.log(`${this.user.username} has gained new followers`);
-    }
+  watch: {
+    followers(newFollowerCount, oldFollowerCount) {
+      if (oldFollowerCount< newFollowerCount){
+        console.log(`${this.user.username} has gained new followers`);
+      }
+    },
   },
   methods: {
     followUser: function () {
