@@ -8,12 +8,14 @@
         <strong>Followers:</strong>
         <span> {{ followers }}</span>
       </div>
-    </div>
-    <div class="user-profile__tweets-wrapper">
-{{user.tweetsLoop[0]}}
-      {{user.tweetsLoop[1]}}
-      {{user.tweetsLoop[2]}}
-      {{user.tweetsLoop[3]}}
+      <div
+        class="user-profile__tweets-wrapper"
+        v-for="items in user.tweetsLoop"
+        :key="items.id"
+      >
+        {{ items.id }}
+        {{ items.content }}
+      </div>
     </div>
   </div>
 </template>
@@ -31,11 +33,11 @@ export default {
         lastName: "chale",
         email: "andersondeveloper@gmail.com",
         isAdmin: false,
-        tweetsLoop:[
-          {id:1,content:'blackmitnick is amazing buddy!!'},
-          {id:2,content:'code with blackmitnick for advanced concepts'},
-          {id:3,content:'if it works never touch it again budahhh'}
-        ]
+        tweetsLoop: [
+          { id: 1, content: "blackmitnick is amazing buddy!!" },
+          { id: 2, content: "code with blackmitnick for advanced concepts" },
+          { id: 3, content: "if it works never touch it again budahhh" },
+        ],
       },
     };
   },
