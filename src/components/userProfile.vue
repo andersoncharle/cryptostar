@@ -28,6 +28,9 @@ export default {
         lastName: "chale",
         email: "andersondeveloper@gmail.com",
         isAdmin: false,
+        tweetsLoop:[
+
+        ]
       },
     };
   },
