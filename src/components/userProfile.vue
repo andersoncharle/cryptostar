@@ -83,19 +83,19 @@ export default {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-.user-profile{
+.user-profile {
   display: grid;
   grid-template-columns: 1fr 3fr;
   width: 100%;
-  padding: 50px 5%;
+  /*padding: 50px 5%;*/
 }
-.user-profile__user-panel{
+.user-profile__user-panel {
   display: flex;
   flex-direction: column;
   margin-right: 50px;
-  padding: 20px;
-  background-color: white;
+  padding: 60px;
+  /*background-color: white;*/
   border-radius: 5px;
-  border: 1px solid #DFE3EB;
+  border: 1px solid #dfe3eb;
 }
 </style>
