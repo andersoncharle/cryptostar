@@ -100,6 +100,7 @@ export default {
   border: 1px solid #dfe3eb;
   text-align: center;
   margin: 0 auto;
+  background-color: MediumSeaGreen;
 }
 .user-profile__admin-badge {
   background-color: rebeccapurple;
