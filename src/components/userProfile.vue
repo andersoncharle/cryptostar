@@ -35,7 +35,9 @@ export default {
         tweetsLoop: [
           { id: 1, content: "blackmitnick is amazing buddy!!" },
           { id: 2, content: "code with blackmitnick for advanced concepts" },
-          { id: 3, content: "if it works never touch it again budahhh" },
+          // { id: 3, content: "if it works never touch it again budahhh" },
+          // { id: 4, content: "if it works never touch it again budahhh" },
+          // { id: 5, content: "if it works never touch it again budahhh" },
         ],
       },
     };
@@ -90,7 +92,9 @@ export default {
 }
 .user-profile {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
   padding: 50px 5%;
 }
 .user-profile__user-panel {
@@ -108,14 +112,17 @@ export default {
 .user-profile__tweets-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-right: 50px;
+  margin-top: 4px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /*padding: 60px;*/
   /*background-color: white;*/
   border-radius: 5px;
   border: 1px solid #dfe3eb;
   /*margin: 0 auto;*/
-  background-color: MediumSeaGreen;
+  background-color: rebeccapurple;
 }
 .user-profile__admin-badge {
   background-color: rebeccapurple;
