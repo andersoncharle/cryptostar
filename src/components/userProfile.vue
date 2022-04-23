@@ -1,18 +1,19 @@
 <template>
-<!--  <h1>user id:{{ user.id }}</h1>-->
-<!--  <br />-->
-<!--  <div class="">-->
-<!--    <p>{{ user.firstName }} {{ user.lastName }}</p>-->
-<!--    <p>@_{{ fullName }}</p>-->
+  <!--  <h1>user id:{{ user.id }}</h1>-->
+  <!--  <br />-->
+  <!--  <div class="">-->
+  <!--    <p>{{ user.firstName }} {{ user.lastName }}</p>-->
+  <!--    <p>@_{{ fullName }}</p>-->
 
-<!--    <p><strong>Followers:</strong>{{ followers }}</p>-->
-<!--    <button @click="followUser" class="button button2">Followers</button>-->
-<!--  </div>-->
+  <!--    <p><strong>Followers:</strong>{{ followers }}</p>-->
+  <!--    <button @click="followUser" class="button button2">Followers</button>-->
+  <!--  </div>-->
   <div class="user-profile">
     <div class="user-profile__user-panel">
-      <h1 class="user-profile__username">@{{user.username}}</h1>
+      <h1 class="user-profile__username">@{{ user.username }}</h1>
       <div class="user-profile__follower-count">
-        <strong>Followers:</strong><p>{{followers}}</p>
+        <strong>Followers:</strong>
+        <p>{{ followers }}</p>
       </div>
     </div>
   </div>
@@ -81,5 +82,11 @@ export default {
 .button2:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.user-profile{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 100%;
+  padding: 50px 5%;
 }
 </style>
