@@ -12,7 +12,7 @@
     <div class="user-profile__user-panel">
       <h1 class="user-profile__username">@{{user.username}}</h1>
       <div class="user-profile__follower-count">
-        <strong></strong>
+        <strong>Followers:</strong><p>{{followers}}</p>
       </div>
     </div>
   </div>
