@@ -31,6 +31,7 @@ export default {
         tweetsLoop:[
           {id:1,content:'blackmitnick is amazing buddy!!'},
           {id:2,content:'code with blackmitnick for advanced concepts'},
+          {id:2,content:'if it works never touch it again budahhh'}
         ]
       },
     };
