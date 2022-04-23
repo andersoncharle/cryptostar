@@ -94,12 +94,12 @@ export default {
   display: flex;
   flex-direction: column;
   /*margin-right: 50px;*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 60px;
   /*background-color: white;*/
   border-radius: 5px;
   border: 1px solid #dfe3eb;
-  text-align: center;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   background-color: MediumSeaGreen;
 }
 .user-profile__admin-badge {
