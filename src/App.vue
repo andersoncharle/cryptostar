@@ -35,7 +35,7 @@ export default {
   },
   watch:{
     followers(newFollowerCount,oldFollowerCount){
-      console.log(`${this.user.username} has gained new`);
+      console.log(`${this.user.username} has gained new followers`);
     }
   },
   methods: {
