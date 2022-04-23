@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <user-profile/>
-
+    <user-profile />
   </div>
 </template>
 
@@ -9,9 +8,9 @@
 import userProfile from "@/components/userProfile";
 export default {
   name: "App",
-  components:{
-    userProfile
-  }
+  components: {
+    userProfile,
+  },
 };
 </script>
 
@@ -31,5 +30,4 @@ body {
   color: ghostwhite;
   margin: 0 auto 60px;
 }
-
 </style>

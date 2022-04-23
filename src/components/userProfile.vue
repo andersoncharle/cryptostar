@@ -1,13 +1,13 @@
 <template>
-  <h1>user id:{{ user.id }}</h1>
-  <br />
-  <div class="">
-    <p>{{ user.firstName }} {{ user.lastName }}</p>
-    <p>@_{{ fullName }}</p>
+<!--  <h1>user id:{{ user.id }}</h1>-->
+<!--  <br />-->
+<!--  <div class="">-->
+<!--    <p>{{ user.firstName }} {{ user.lastName }}</p>-->
+<!--    <p>@_{{ fullName }}</p>-->
 
-    <p><strong>Followers:</strong>{{ followers }}</p>
-    <button @click="followUser" class="button button2">Followers</button>
-  </div>
+<!--    <p><strong>Followers:</strong>{{ followers }}</p>-->
+<!--    <button @click="followUser" class="button button2">Followers</button>-->
+<!--  </div>-->
 </template>
 
 <script>
@@ -33,7 +33,7 @@ export default {
   },
   watch: {
     followers(newFollowerCount, oldFollowerCount) {
-      if (oldFollowerCount< newFollowerCount){
+      if (oldFollowerCount < newFollowerCount) {
         console.log(`${this.user.username} has gained new followers`);
       }
     },
@@ -49,7 +49,7 @@ export default {
      * */
 
     this.followUser();
-  }
+  },
 };
 </script>
 
@@ -72,6 +72,6 @@ export default {
 
 .button2:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-  0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 </style>
