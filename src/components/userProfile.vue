@@ -10,7 +10,7 @@
   <!--  </div>-->
   <div class="user-profile">
     <div class="user-profile__user-panel">
-      <h1 class="user-profile__username">@{{ user.username }}</h1>
+      <h1 class="user-profile__username">@_{{ user.username }}</h1>
       <div class="user-profile__follower-count">
         <strong>Followers:</strong>
         <p>{{ followers }}</p>
