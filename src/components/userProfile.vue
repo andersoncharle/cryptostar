@@ -87,15 +87,15 @@ export default {
 .user-profile {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  /*width: 100%;*/
-  /*padding: 50px 5%;*/
+  width: 100%;
+  padding: 50px 5%;
 }
 .user-profile__user-panel {
   display: flex;
   flex-direction: column;
-  /*margin-right: 50px;*/
+  margin-right: 50px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 60px;
+  /*padding: 60px;*/
   /*background-color: white;*/
   border-radius: 5px;
   border: 1px solid #dfe3eb;
