@@ -107,5 +107,7 @@ export default {
   background-color: rebeccapurple;
   color: wheat;
   border-radius: 6px;
+margin-right: auto;
+  padding: 0 10px;
 }
 </style>
