@@ -9,6 +9,9 @@
         <span> {{ followers }}</span>
       </div>
     </div>
+    <div class="user-profile__tweets-wrapper">
+
+    </div>
   </div>
 </template>
 
