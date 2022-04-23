@@ -23,7 +23,7 @@ export default {
         firstName: "mkakari",
         lastName: "chale",
         email: "andersondeveloper@gmail.com",
-        isAdmin: true,
+        isAdmin: false,
       },
     };
   },
