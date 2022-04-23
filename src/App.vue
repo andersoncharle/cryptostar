@@ -38,6 +38,10 @@ export default {
       this.followers++;
     },
   },
+/*
+* life cycle hook
+* */
+
 };
 </script>
 
