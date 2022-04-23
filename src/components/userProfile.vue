@@ -29,7 +29,8 @@ export default {
         email: "andersondeveloper@gmail.com",
         isAdmin: false,
         tweetsLoop:[
-
+          {id:1,content:'blackmitnick is amazing buddy!!'},
+          {id:1,content:'blackmitnick is amazing buddy!!'},
         ]
       },
     };
