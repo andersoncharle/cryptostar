@@ -1,17 +1,8 @@
 <template>
-  <!--  <h1>user id:{{ user.id }}</h1>-->
-  <!--  <br />-->
-  <!--  <div class="">-->
-  <!--    <p>{{ user.firstName }} {{ user.lastName }}</p>-->
-  <!--    <p>@_{{ fullName }}</p>-->
-
-  <!--    <p><strong>Followers:</strong>{{ followers }}</p>-->
-  <!--    <button @click="followUser" class="button button2">Followers</button>-->
-  <!--  </div>-->
   <div class="user-profile">
     <div class="user-profile__user-panel">
       <h1 class="user-profile__username">@_{{ user.username }}</h1>
-      <div class="user-profile__admin-badge">Admin</div>
+      <div class="user-profile__admin-badge" v-if="user.isAdmin">Admin</div>
       <div class="user-profile__follower-count">
         <strong>Followers:</strong>
         <span> {{ followers }}</span>
