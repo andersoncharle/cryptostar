@@ -38,9 +38,13 @@ export default {
       this.followers++;
     },
   },
-/*
-* life cycle hook
-* */
+  mounted() {
+    /*
+  * life cycle hook
+  * */
+
+    this.followUser();
+  }
 
 };
 </script>
