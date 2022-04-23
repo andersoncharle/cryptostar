@@ -107,6 +107,7 @@ export default {
   color: wheat;
   border-radius: 6px;
   margin-right: auto;
+  margin-bottom: 10px;
   padding: 2px 10px;
   text-transform: lowercase;
 }
