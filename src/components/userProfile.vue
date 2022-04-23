@@ -89,4 +89,13 @@ export default {
   width: 100%;
   padding: 50px 5%;
 }
+.user-profile__user-panel{
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #DFE3EB;
+}
 </style>
