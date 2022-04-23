@@ -10,9 +10,7 @@
   <!--  </div>-->
   <div class="user-profile">
     <div class="user-profile__user-panel">
-      <div class="user-profile__admin-badge">
-        Admin
-      </div>
+      <div class="user-profile__admin-badge">Admin</div>
       <h1 class="user-profile__username">@_{{ user.username }}</h1>
       <div class="user-profile__follower-count">
         <strong>Followers:</strong>
@@ -103,11 +101,12 @@ export default {
   text-align: center;
   margin: 0 auto;
 }
-.user-profile__admin-badge{
+.user-profile__admin-badge {
   background-color: rebeccapurple;
   color: wheat;
   border-radius: 6px;
-margin-right: auto;
-  padding: 0 10px;
+  margin-right: auto;
+  padding: 2px 10px;
+  text-transform: lowercase;
 }
 </style>
