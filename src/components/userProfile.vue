@@ -10,7 +10,10 @@
       </div>
     </div>
     <div class="user-profile__tweets-wrapper">
-
+{{user.tweetsLoop[0]}}
+      {{user.tweetsLoop[1]}}
+      {{user.tweetsLoop[2]}}
+      {{user.tweetsLoop[3]}}
     </div>
   </div>
 </template>
@@ -31,7 +34,7 @@ export default {
         tweetsLoop:[
           {id:1,content:'blackmitnick is amazing buddy!!'},
           {id:2,content:'code with blackmitnick for advanced concepts'},
-          {id:2,content:'if it works never touch it again budahhh'}
+          {id:3,content:'if it works never touch it again budahhh'}
         ]
       },
     };
