@@ -33,6 +33,11 @@ export default {
       return `${this.user.firstName} ${this.user.lastName}`;
     },
   },
+  watch:{
+    followers(newFollowerCount,oldFollowerCount){
+      console.log(`${this.user.username} has gained new`);
+    }
+  },
   methods: {
     followUser: function () {
       this.followers++;
@@ -40,12 +45,11 @@ export default {
   },
   mounted() {
     /*
-  * life cycle hook
-  * */
+     * life cycle hook
+     * */
 
     this.followUser();
-  }
-
+  },
 };
 </script>
 
