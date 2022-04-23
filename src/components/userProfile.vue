@@ -13,7 +13,6 @@
         v-for="items in user.tweetsLoop"
         :key="items.id"
       >
-        {{ items.id }}
         {{ items.content }}
       </div>
     </div>
