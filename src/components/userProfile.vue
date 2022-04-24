@@ -10,7 +10,10 @@
           <span> {{ followers }}</span>
         </div>
         <div class="container">
-          <form class="user-profile__create-tweet" @submit.prevent="createNewTweet">
+          <form
+            class="user-profile__create-tweet"
+            @submit.prevent="createNewTweet"
+          >
             <label for="subject"><strong>new tweets:</strong></label>
             <textarea
               id="subject"
@@ -74,7 +77,7 @@ export default {
         tweetsLoop: [
           { id: 1, content: "blackmitnick is amazing buddy!!" },
           { id: 2, content: "code with blackmitnick for advanced concepts" },
-          { id: 3, content: "if it works never touch it again budahhh" },
+          // { id: 3, content: "if it works never touch it again budahhh" },
           // { id: 4, content: "if it works never touch it again budahhh" },
           // { id: 5, content: "if it works never touch it again budahhh" },
         ],
@@ -100,14 +103,15 @@ export default {
     followUser: function () {
       this.followers++;
     },
-    createNewTweet(){
-      if (this.newTweetContent && this.selectedTweetType !== 'draft'){
-      this.user.tweetsLoop.unshift({
-      id: this.user.tweetsLoop.length + 1,
-        content: this.newTweetContent
-        })
+    createNewTweet() {
+      if (this.newTweetContent && this.selectedTweetType !== "draft") {
+        this.user.tweetsLoop.unshift({
+          id: this.user.tweetsLoop.length + 1,
+          content: this.newTweetContent,
+        });
+        this.newTweetContent = "";
       }
-    }
+    },
   },
   mounted() {
     /*
