@@ -14,7 +14,10 @@
             class="user-profile__create-tweet"
             @submit.prevent="createNewTweet"
           >
-            <label for="subject"><strong>new tweets:</strong></label>
+            <label for="subject">
+              <strong>new tweets:</strong>
+              ({{ newTweetsCharacterCount }}/180)
+            </label>
             <textarea
               id="subject"
               name="subject"
@@ -88,9 +91,9 @@ export default {
     fullName() {
       return `${this.user.firstName} ${this.user.lastName}`;
     },
-    newTweetsCharacterCount(){
+    newTweetsCharacterCount() {
       return this.newTweetContent.length;
-    }
+    },
   },
   watch: {
     followers(newFollowerCount, oldFollowerCount) {
