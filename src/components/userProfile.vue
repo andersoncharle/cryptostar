@@ -88,6 +88,9 @@ export default {
     fullName() {
       return `${this.user.firstName} ${this.user.lastName}`;
     },
+    newTweetsCharacterCount(){
+      return this.newTweetContent.length;
+    }
   },
   watch: {
     followers(newFollowerCount, oldFollowerCount) {
