@@ -10,19 +10,20 @@
           <span> {{ followers }}</span>
         </div>
         <div class="container">
-          <form class="user-profile__create-tweet">
+          <form class="user-profile__create-tweet" @submit.prevent="createNewTweet">
             <label for="subject"><strong>new tweets:</strong></label>
             <textarea
               id="subject"
               name="subject"
               placeholder="Write something.."
               style="height: 50px"
+              v-model="newTweetContent"
             ></textarea>
             <div class="user-profile__create-tweets-type">
               <label for="newTweetsType">
                 <strong>Type: </strong>
               </label>
-              <select name="" id="newTweetsType">
+              <select name="" id="newTweetsType" v-model="selectedTweetType">
                 <option
                   :value="option.value"
                   v-for="(option, index) in tweetTypes"
@@ -56,6 +57,8 @@ export default {
   components: { tweetItem },
   data() {
     return {
+      newTweetContent: "",
+      selectedTweetType: "instant",
       tweetTypes: [
         { value: "draft", name: "Draft" },
         { value: "instant", name: "Instant Tweet" },
@@ -97,6 +100,13 @@ export default {
     followUser: function () {
       this.followers++;
     },
+    createNewTweet(){
+      if (this.newTweetContent && this.selectedTweetType !== 'draft'){
+      this.user.tweetsLoop.unshift({
+      id: this.user.tweetsLoop.length + 1
+        })
+      }
+    }
   },
   mounted() {
     /*
