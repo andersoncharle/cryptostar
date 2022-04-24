@@ -13,6 +13,7 @@
           <form
             class="user-profile__create-tweet"
             @submit.prevent="createNewTweet"
+            :class="{ '--exceeded': newTweetsCharacterCount > 180 }"
           >
             <label for="subject">
               <strong>new tweets:</strong>
@@ -211,6 +212,14 @@ input[type="submit"]:hover {
   background-color: #f2f2f2;
   padding: 20px;
   margin: 20px auto;
+}
+.--exceeded {
+  color: red;
+  border: 2px solid red;
+}
+.--exceeded input[type="submit"] {
+  color: white;
+  background-color: red;
 }
 
 .user-profile__admin-badge {
