@@ -103,7 +103,8 @@ export default {
     createNewTweet(){
       if (this.newTweetContent && this.selectedTweetType !== 'draft'){
       this.user.tweetsLoop.unshift({
-      id: this.user.tweetsLoop.length + 1
+      id: this.user.tweetsLoop.length + 1,
+        content: this.newTweetContent
         })
       }
     }
