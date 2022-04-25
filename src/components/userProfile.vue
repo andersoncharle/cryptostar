@@ -40,7 +40,7 @@
                 </option>
               </select>
             </div>
-            <input type="submit" value="Submit" />
+            <input type="submit" value="Tweeet it!" />
           </form>
         </div>
       </div>
