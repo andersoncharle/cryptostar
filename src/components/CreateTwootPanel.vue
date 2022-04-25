@@ -7,7 +7,7 @@
       <div class="create-twoot-type">
         <label for="newTwootType"><strong>Type: </strong></label>
         <select id="newTwootType" v-model="state.selectedTwootType">
-          <option :value="option.value" v-for="(option, index) in state.twootTypes" :key="index">
+          <option :value="option.value" v-for="(option, index) in state.tweetTypes" :key="index">
             {{ option.name }}
           </option>
         </select>
@@ -29,7 +29,7 @@ export default {
     const state = reactive({
       newTwootContent: '',
       selectedTwootType: 'instant',
-      twootTypes: [
+      tweetTypes: [
         { value: 'draft', name: 'Draft' },
         { value: 'instant', name: 'Instant Twoot'}
       ]
